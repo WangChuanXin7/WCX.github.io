@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+     .box{
+        width:300px;
+        height: 300px;
+        /* border: 1px solid red; */
+        margin:100px auto;
+        position: relative;
+        animation: test 1s 0.3s linear infinite;
+     }
+     .circle_one,.circle_two{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+     }
+     .circle_one{
+       left: 33px;
+       top:0;
+     }
+     .circle_two{
+       right: 1px;
+       top:0;
+     }
+     .square{
+       width: 153px;
+       height: 143px;
+       background: red;
+       position: absolute;
+       bottom:94px;
+       left: 85px;
+       transform: rotate(45deg);
+     }
+     @keyframes test{
+       from{
+         transform: scale(0.5)
+       }
+       to{
+          transform: scale(1.2);
+       }
+     }
+  </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle_one"></div>
+        <div class="circle_two"></div>
+        <div class="square"></div>
+    </div>
+</body>
+</html>
